@@ -1,10 +1,12 @@
-import logo from "./logo.svg";
+
 import "./App.css";
 import "./components/HelloWorld.js"
 
 import SayMyName from "./components/SayMyName";
 import Pessoa from "./components/Pessoa"
 import Frase from "./components/Frase"
+import List from "./components/List"
+
 
 function App() {
   const nome = "Fulano"
@@ -17,6 +19,8 @@ function App() {
       <SayMyName nome={nome}/>
       <Frase/>
       <Pessoa nome="Diogo" idade="29" profissão="Testador" foto="https://via.placeholder.com/150"/>
+      <List/>
+      
     </div>
   );
 }
