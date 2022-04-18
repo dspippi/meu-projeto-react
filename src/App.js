@@ -7,9 +7,7 @@ function App() {
   const nome = "Fulano"
   return (
     <div className="App">
-      <h1>Testando eventos</h1>
-      <Evento numero="1" />
-      <Evento numero="2" />
+
       <Form />
 
     </div>
