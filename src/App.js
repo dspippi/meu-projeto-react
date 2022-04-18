@@ -1,22 +1,22 @@
 import logo from "./logo.svg";
 import "./App.css";
+import "./components/HelloWorld.js"
+
+import SayMyName from "./components/SayMyName";
+import Pessoa from "./components/Pessoa"
+import Frase from "./components/Frase"
 
 function App() {
-  const name = "Calegari";
-
-function soma(a,b){
-  return a+b;
-}
-
-const url = "https://via.placeholder.com/150"
-
+  const nome = "Fulano"
   return (
     <div className="App">
-      <img src={logo} className="App-logo" alt="logo" />
-      <h2>Entendendo o React</h2>
-      <h2>{name}</h2>
-      <h2>Soma: {soma(3,1)}</h2>
-      <img src={url} alt="Minha imagem" />
+      <Frase/>
+      
+      <SayMyName nome="Calegari"/>
+      <SayMyName nome="João"/>
+      <SayMyName nome={nome}/>
+      <Frase/>
+      <Pessoa nome="Diogo" idade="29" profissão="Testador" foto="https://via.placeholder.com/150"/>
     </div>
   );
 }
