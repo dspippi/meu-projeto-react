@@ -1,5 +1,6 @@
 
 import "./App.css";
+import Condicional from "./components/Condicional";
 import Evento from "./components/Evento"
 import Form from "./components/Form"
 
@@ -7,13 +8,9 @@ function App() {
   const nome = "Fulano"
   return (
     <div className="App">
+      <h1>Renderização condicional</h1>
+      <Condicional />
 
-      <h1>
-        Testando Eventos
-      </h1>
-      <Evento />
-      
-      <Form />
 
     </div>
   );
